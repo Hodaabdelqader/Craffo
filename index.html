@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Header</title>
+    <link rel="stylesheet" href="./master.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body class="bg-gray-100">
+    <header class="bg-black shadow-lg px-9 py-6 flex justify-between items-center relative z-50 w-full md:fixed ">
+        <div class=""><img src="./images/logo-focal (1).avif" width="130px"></div>
+        <div class="div text-white hidden md:flex relative items-center justify-center space-x-11">
+            <div class="content-link relative shop-by-category"><a href="#" class="underline-animation "data-content="category">Shop by Category</a>
+                <div class="landing p-5  bg-white  absolute hidden">
+                    <div class=" grid-cols-1 md:grid-cols-4 contents id="id="landing-content">
+                        <div class="flex flex-col gap-10 w-full justify-between lg:flex-row">
+                            <ul class="w-full">
+                                <li class="font-bold text-lg">PROTECT & CARRY</li>
+                                <li>iPhone Cases</li>
+                                <li>AirPods Cases</li>
+                                <li>Sleeves</li>
+                                <li>Accessories</li>
+                            </ul>
+        
+                            <ul class="w-full">
+                                <li class="font-bold text-lg">PROTECT & CARRY</li>
+                                <li>iPhone Cases</li>
+                                <li>AirPods Cases</li>
+                                <li>Sleeves</li>
+                                <li>Accessories</li>
+                            </ul>
+        
+                            <ul>
+                                <li><img src="./images/bundles.jpg"></li>
+                                <li class="font-bold text-lg">IPHONE CASES</li>
+                                <li>Give your iPhone one-of-a-kind character</li>
+                            </ul>
+                            <ul>
+                                <li><img src="./images/wireless-chargers.webp"></li>
+                                <li class="font-bold text-lg">CHARGERS</li>
+                                <li>Solutions to power all your tech
+                                </li>
+                            </ul>
+        
+                            <ul>
+                                <li><img src="./images/iphone-cases.webp" width="100%"></li>
+                                <li class="font-bold text-lg">BUNDLES</li>
+                                <li>Our essentials at a reduced price
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-link"><a href="#" class=" underline-animation"data-content="device">Shop by Device</a>
+
+            </div>
+            <div class="content-link"><a href="#" class="underline-animation">Collections</a></div>
+            <div class="content-link"><a href="#" class="underline-animation">Blog</a></div>
+            <div class="landing p-5  bg-white  absolute hidden">
+                <div class=" grid-cols-1 md:grid-cols-4 contents id="id="landing-content">
+                    <div class="flex flex-col gap-10 w-full justify-between lg:flex-row">
+                        <ul class="w-full">
+                            <li class="font-bold text-lg">PROTECT & CARRY</li>
+                            <li>iPhone Cases</li>
+                            <li>AirPods Cases</li>
+                            <li>Sleeves</li>
+                            <li>Accessories</li>
+                        </ul>
+    
+                        <ul class="w-full">
+                            <li class="font-bold text-lg">PROTECT & CARRY</li>
+                            <li>iPhone Cases</li>
+                            <li>AirPods Cases</li>
+                            <li>Sleeves</li>
+                            <li>Accessories</li>
+                        </ul>
+    
+                        <ul>
+                            <li><img src="./images/bundles.jpg"></li>
+                            <li class="font-bold text-lg">IPHONE CASES</li>
+                            <li>Give your iPhone one-of-a-kind character</li>
+                        </ul>
+                        <ul>
+                            <li><img src="./images/wireless-chargers.webp"></li>
+                            <li class="font-bold text-lg">CHARGERS</li>
+                            <li>Solutions to power all your tech
+                            </li>
+                        </ul>
+    
+                        <ul>
+                            <li><img src="./images/iphone-cases.webp" width="100%"></li>
+                            <li class="font-bold text-lg">BUNDLES</li>
+                            <li>Our essentials at a reduced price
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="hidden md:flex space-x-4 text-white justify-between">
+            <div class="icons flex justify-center items-center gap-4 cursor-pointer ">
+                <i class="fa-regular fa-envelope text-lg"></i>
+                <i class="fa-solid fa-magnifying-glass text-lg"></i>
+                <i class="fa-regular fa-user text-lg"></i>
+                <svg focusable="false" width="20" height="18" class="icon icon--header-cart   " viewBox="0 0 20 18">
+                    <path d="M3 1h14l1 16H2L3 1z" fill="none" stroke="currentColor" stroke-width="2"></path>
+                    <path d="M7 4v0a3 3 0 003 3v0a3 3 0 003-3v0" fill="none" stroke="currentColor" stroke-width="2">
+                    </path>
+                </svg>
+            </div>
+        </nav>
+        <div class="md:hidden flex items-center">
+            <button id="menu-button" class="text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+            </button>
+        </div>
+    </header>
+    <nav id="mobile-menu" class="bg-white shadow-lg p-4 space-y-2 menu-hidden">
+        <a href="#" class="block text-gray-700 hover:text-gray-900">Shop by Category</a>
+        <a href="#" class="block text-gray-700 hover:text-gray-900">Shop by Device</a>
+        <a href="#" class="block text-gray-700 hover:text-gray-900">Collections</a>
+        <a href="#" class="block text-gray-700 hover:text-gray-900">Blog</a>
+        <div class="icons flex justify-center items-center gap-4 cursor-pointer ">
+            <i class="fa-regular fa-envelope text-lg"></i>
+            <i class="fa-solid fa-magnifying-glass text-lg"></i>
+            <i class="fa-regular fa-user text-lg"></i>
+            <svg focusable="false" width="20" height="18" class="icon icon--header-cart   " viewBox="0 0 20 18">
+                <path d="M3 1h14l1 16H2L3 1z" fill="none" stroke="currentColor" stroke-width="2"></path>
+                <path d="M7 4v0a3 3 0 003 3v0a3 3 0 003-3v0" fill="none" stroke="currentColor" stroke-width="2"></path>
+            </svg>
+        </div>
+    </nav>
+
+    <div class="swiper">
+        <div class="swiper-wrapper ">
+            <div class="swiper-slide relative">
+                <div class="slide-img ">
+                    <img src="./images/tom-dixon-lp-tile-1.webp" class=" object-cover h-full">
+                </div>
+                <div class="slide-content flex flex-col gap-8 text-white">
+                    <p class="font-bold ">Collaboration</p>
+                    <strong class="text-3xl md:text-6xl font-bold w-full h-full uppercase tracking-wide">Native Union
+                        x<br>Tom Dixon
+                    </strong>
+                    <div class="">
+                        <button
+                            class=" px-5 py-4 w-44 xlg:w-32 text-black btnHov relative overflow-hidden font-bold">LEARN
+                            MORE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide relative">
+                <div class="slide-img ">
+                    <img src="./images/heritage-lp-3.webp" class=" object-cover h-full">
+                </div>
+                <div class="slide-content text-white flex flex-col gap-8">
+                    <p class=" font-bold">PREMIUM COLLECTION</p>
+                    <strong class="text-3xl md:text-6xl font-bolder w-full h-full uppercase tracking-wide">The
+                        Heritage<br>
+                        Collection</strong>
+                    <div class="flex flex-col md:flex-row gap-5">
+                        <button
+                            class=" px-5 py-4 w-44 xlg:w-32 text-black btnHov relative overflow-hidden font-bold">LEARN
+                            MORE</button>
+                        <button
+                            class=" px-5 py-3 w-44 xlg:w-32 text-black btnHov relative overflow-hidden font-bold">SHOP</button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide relative">
+                <div class="slide-img ">
+                    <img src="//focal-theme-carbon.myshopify.com/cdn/shop/files/mk-lp-tile-1.jpg?v=1630493139&amp;width=3000"
+                        alt="" class=" object-cover h-full"
+                        srcset="//focal-theme-carbon.myshopify.com/cdn/shop/files/mk-lp-tile-1.jpg?v=1630493139&amp;width=600 600w, //focal-theme-carbon.myshopify.com/cdn/shop/files/mk-lp-tile-1.jpg?v=1630493139&amp;width=700 700w, //focal-theme-carbon.myshopify.com/cdn/shop/files/mk-lp-tile-1.jpg?v=1630493139&amp;width=800 800w, //focal-theme-carbon.myshopify.com/cdn/shop/files/mk-lp-tile-1.jpg?v=1630493139&amp;width=1000 1000w, //focal-theme-carbon.myshopify.com/cdn/shop/files/mk-lp-tile-1.jpg?v=1630493139&amp;width=1200 1200w, //focal-theme-carbon.myshopify.com/cdn/shop/files/mk-lp-tile-1.jpg?v=1630493139&amp;width=1400 1400w, //focal-theme-carbon.myshopify.com/cdn/shop/files/mk-lp-tile-1.jpg?v=1630493139&amp;width=1600 1600w, //focal-theme-carbon.myshopify.com/cdn/shop/files/mk-lp-tile-1.jpg?v=1630493139&amp;width=1800 1800w, //focal-theme-carbon.myshopify.com/cdn/shop/files/mk-lp-tile-1.jpg?v=1630493139&amp;width=2000 2000w, //focal-theme-carbon.myshopify.com/cdn/shop/files/mk-lp-tile-1.jpg?v=1630493139&amp;width=2200 2200w, //focal-theme-carbon.myshopify.com/cdn/shop/files/mk-lp-tile-1.jpg?v=1630493139&amp;width=2400 2400w, //focal-theme-carbon.myshopify.com/cdn/shop/files/mk-lp-tile-1.jpg?v=1630493139&amp;width=2600 2600w, //focal-theme-carbon.myshopify.com/cdn/shop/files/mk-lp-tile-1.jpg?v=1630493139&amp;width=2800 2800w, //focal-theme-carbon.myshopify.com/cdn/shop/files/mk-lp-tile-1.jpg?v=1630493139&amp;width=3000 3000w"
+                        width="3000" height="1500" loading="eager" draggable="false" class="slideshow__image"
+                        sizes="100vw">
+                </div>
+                <div class="slide-content text-white flex flex-col gap-8">
+                    <p class="font-bold">New in</p>
+                    <strong class="text-3xl md:text-6xl font-bold w-full h-full uppercase tracking-wide">The
+                        Maison<br>Kitsuné
+                        Collab</strong>
+                    <div class="">
+                        <button
+                            class=" px-5 py-4 w-44 xlg:w-32 text-black btnHov relative overflow-hidden font-bold">LEARN
+                            MORE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination "></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./main.js"></script>
+
+</body>
+
+</html>

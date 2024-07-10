@@ -1,0 +1,169 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.menu-hidden {
+    display: none;
+}
+
+.landing {
+    display: none;
+    position: absolute;
+    top: calc(100% + 20px);
+    left: 50%;
+    transform: translateX(-38%);
+    width: 95vw;
+    color: #333;
+    border-radius: 0.25rem;
+    background-color: white;
+    z-index: 1000;
+
+}
+
+.content-link:hover .landing,
+.content-link:focus-within .landing,
+.landing:hover {
+    display: grid;
+    cursor: pointer;
+}
+
+.underline-animation {
+    position: relative;
+    display: inline-block;
+}
+
+.underline-animation::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-out, transform-origin 0s 0.3s;
+}
+
+.underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 0.3s ease-out;
+}
+
+.underline-animation:not(:hover)::after {
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease-out, transform-origin 0s 0s;
+}
+
+.slide-content {
+    position: absolute;
+    top: 70%;
+    width: 100%;
+    left: 10%;
+    opacity: 0px;
+    transform: translateY(100%);
+    transition: transform 1s ease, opacity 1s ease;
+}
+.swiper img{
+    width: 100%;
+    height: 100vh;
+}
+.slide-content.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.btnHov::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    opacity: 0.1;
+    transform: scaley(0);
+    transform-origin: bottom;
+    transition: transform 0.3s ease-in-out;
+}
+.btnHov:hover::after {
+    transform: scaley(1);
+}
+.swiper-pagination, .swiper-button-next, .swiper-button-prev {
+    display: block !important; /* Ensure they're visible */
+}
+.slide-img:hover .slide-content {
+    opacity: 1;
+}
+.slide-content.show {
+    transform: translateY(-100%);
+    transition: 0.5s;
+    left: 15%;
+}
+.slide-content button {
+    background-color: #f3ff34;
+}
+.swiper-pagination{
+    display: flex;
+    width: 100%;
+    justify-content: center
+;}
+
+.swiper-pagination .swiper-pagination-bullet{
+    width: 80px;
+    height: 2px;
+    border-radius: 0px;
+    padding: 1px;
+}
+.swiper-pagination .swiper-pagination-bullet-active{
+    background-color: white;
+}
+/* Style for the swiper pagination container */
+.swiper-pagination {
+    position: absolute;
+    bottom: 10px; 
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.swiper-pagination .swiper-pagination-bullet-active{
+    background-color: #7777778f;
+}
+
+/* Style for each pagination bullet */
+.swiper-pagination-bullet {
+    width: 10px; /* Adjust as needed */
+    height: 10px; /* Adjust as needed */
+    background: #ccc; /* Adjust as needed */
+    border-radius: 50%;
+    margin: 0 5px; /* Adjust as needed */
+    position: relative;
+    overflow: hidden;
+}
+
+/* Style for the active bullet progress bar */
+.swiper-pagination-bullet-active::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%) scaleX(0);
+    width: 100%;
+    height: 2px; /* Adjust as needed */
+    background: white; /* Adjust as needed */
+    transform-origin: left; /* This ensures the animation starts from the left */
+    animation: progress 6s linear infinite;
+}
+
+/* Keyframes for the progress bar animation */
+@keyframes progress {
+    from {
+        transform: translateY(-50%) scaleX(0);
+    }
+    to {
+        transform: translateY(-50%) scaleX(1);
+    }
+}
